@@ -1,0 +1,25 @@
+.nav {
+  &__list {
+    display: flex;
+    @include reset-list;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__links{
+      @include common-text(12px, 15px, $linkColor);
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+      &:hover{
+          color: $headingColor;
+      }
+      &--active{
+          color: $headingColor;
+      }
+  }
+
+}

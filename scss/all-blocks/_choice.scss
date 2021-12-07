@@ -1,0 +1,238 @@
+.choice .container{
+  margin-bottom: 321px;
+}
+
+.choice__inset {
+  position: relative;
+  padding: 100px 0;
+  padding-bottom: 317px;
+  background-color: $mainBgColor;
+  border-radius: 10px;
+}
+
+.choice__heading {
+  @include common-heading(40px, 48px);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.choice__text {
+  @include common-text();
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.choice__list {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, 40%);
+  @include reset-list;
+  max-width: 1110px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.choice__item + .choice__item {
+  margin-left: 30px;
+}
+
+.choice__item {
+  max-width: 350px;
+  width: 100%;
+  padding: 48px;
+  padding-top: 72px;
+  background-color: $mainListColor;
+  border-radius: 8px;
+
+  &--card3::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    background-image: url(/img/card3.svg);
+    background-repeat: no-repeat;
+    background-size: 72px;
+    background-position: center;
+    content: "";
+  }
+
+  &--card2::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    background-image: url(/img/card2.svg);
+    background-repeat: no-repeat;
+    background-size: 72px;
+    background-position: center;
+    content: "";
+  }
+
+  &--card1::before {
+    display: block;
+    width: 72px;
+    height: 50px;
+    margin: 11px auto 67px auto;
+    background-image: url(/img/card1.svg);
+    background-repeat: no-repeat;
+    background-size: 72px 50px;
+    background-position: center;
+    content: "";
+  }
+}
+
+.choice__info__heading {
+  @include common-heading(24px, 32px);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.choice__info__text {
+  @include common-text();
+  opacity: 0.8;
+  text-align: center;
+}
+
+@media only screen and(max-width: 1050px) {
+  .choice__item {
+    padding: 25px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and(max-width: 925px) {
+
+.choice .container{
+  margin-bottom: 400px;
+}
+
+  .choice__list {
+    max-width: 600px;
+    width: 100%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .choice__item {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+      &::before{
+          margin-bottom: 0;
+          margin-right: 55px;
+          margin-left: 55px;
+      }
+    
+  }
+
+  .choice__item + .choice__item{
+      margin-left: 0;
+      margin-top: 24px;
+  }
+
+  .choice__info__heading{
+      text-align: left;
+  }
+
+  .choice__info__text{
+      max-width: 350px;
+      text-align: left;
+  }
+}
+
+@media only screen and(max-width: 720px){
+    .choice__inset{
+        padding: 56px 74px 368px 74px;
+    }
+
+    .choice__list{
+        max-width: 550px;
+    }
+
+    .choice__item{
+        
+        padding: 40px;
+        &::before{
+            margin-left: 0;
+            margin-right: 55px;
+        }
+    }
+
+    .choice__info__heading{
+        margin-bottom: 16px;
+    }
+
+    .choice__info__text{
+        max-width: 300px;
+    }
+}
+
+@media only screen and(max-width: 660px){
+
+  .choice .container{
+    margin-bottom: 600px;
+  }
+
+.choice__inset{
+  padding-bottom: 600px;
+}
+
+  .choice__list{
+    max-width: 400px;
+    width: 100%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+  }
+
+    .choice__item{
+      flex-direction: column;
+
+      &::before{
+        margin: 0;
+        margin-bottom: 24px;
+      }
+    }
+
+    .choice__info__heading{
+      text-align: center;
+    }
+
+    .choice__info__text{
+      text-align: center;
+    }
+}
+
+@media only screen and(max-width: 500px){
+.choice__inset{
+  padding: 64px 24px 661px 24px;
+}
+
+  .choice__list{
+    max-width: 279px;
+    width: 100%;
+  }
+
+  .choice__item{
+    max-width: 279px;
+  }
+
+  .choice__heading{
+    @include common-heading(28px, 28px);
+    margin-bottom: 24px;
+  }
+
+  .choice__text{
+    max-width: 279px;
+    @include common-text(15px, 25px);
+  }
+}

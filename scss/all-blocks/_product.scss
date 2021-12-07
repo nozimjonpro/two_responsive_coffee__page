@@ -1,0 +1,210 @@
+.product .container {
+  max-width: 1111px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: 168px;
+}
+
+.product__heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  // transform: translateX(50%);
+  max-width: 1111px;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  @include common-heading(150px, 72px, $color: $linkColor);
+  background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.product__list {
+  max-width: 1111px;
+  width: 100%;
+  display: flex;
+  @include reset-list;
+  transform: translateY(61px);
+}
+
+.product__item + .product__item {
+  margin-left: 30px;
+}
+
+.product__item {
+  &::before {
+    display: block;
+    width: 255px;
+    height: 193px;
+    margin-bottom: 71px;
+    background-image: url(/img/product.png);
+    background-repeat: no-repeat;
+    background-size: 255px 193px;
+    content: "";
+  }
+}
+
+.product__item__heading {
+  @include common-heading($color: $headingColor);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.product__item__text {
+  max-width: 255px;
+  width: 100%;
+  @include common-text($color: $headingColor);
+  text-align: center;
+}
+
+@media only screen and(max-width: 1100px) {
+
+  .product__heading {
+    @include common-heading(130px, 72px, $color: $linkColor);
+    background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .product__list {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+.product__item + .product__item{
+  margin-left: 0;
+}
+
+  .product__item {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   &::before{
+     margin-bottom: 0;
+     margin-right: 36px;
+   }
+
+  
+  }
+
+ .product__item__text{
+   max-width: 400px;
+ }
+}
+
+
+@media only screen and(max-width: 925px){
+  .product__heading{
+    @include common-heading(100px, 72px, $color: $linkColor);
+    background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@media only screen and(max-width: 750px){
+  .product__heading{
+    @include common-heading(80px, 72px, $color: $linkColor);
+    background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .product__item{
+    &::before{
+      margin-right: 20px;
+    }
+
+    .product__item__info{
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and(max-width: 620px){
+.product__heading{
+  @include  common-heading(70px, 72px, $color: $linkColor);
+  background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.product__item{
+margin-bottom: 40px;
+&::before{
+  width: 200px;
+  height: 138px;
+  background-size: 200px 138px;
+}
+
+.product__item__info{
+  max-width: 255px;
+  width: 100%;
+}
+
+&__heading{
+  @include common-heading(22px, 32px, $color: $headingColor);
+  text-align: left;
+  margin-bottom: 20px;
+}
+&__text{
+  @include common-text(14px, 25px, $color: $headingColor);
+  text-align: left;
+}
+}
+}
+
+@media only screen and(max-width: 485px){
+  .product__heading{
+    @include common-heading(50px, 72px, $color: $linkColor);
+    background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .product__item{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .product__item{
+    flex-direction: column;
+
+    &::before{
+      margin-right: 0;
+    }
+    &__heading{
+      text-align: center;
+    }
+
+    &__text{
+      text-align: center;
+    }
+  }
+
+ 
+}
+
+@media only screen and(max-width: 360px){
+  .product__heading{
+    @include common-heading(40px, 72px, $color: $linkColor);
+    background-image: linear-gradient(rgba(131, 136, 143, 1), transparent);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

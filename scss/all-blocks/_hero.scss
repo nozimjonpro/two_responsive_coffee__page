@@ -1,0 +1,114 @@
+.hero .container .hero__inset{
+    margin-bottom: 136px;
+    background-image: url(/img/coffee_hero.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 600px;
+    background-position: center;
+}
+
+.hero__info{
+    padding: 117px 85px;
+}
+
+.hero__heading{
+    max-width: 493px;
+    width: 100%;
+    @include common-heading(72px, 72px);
+    margin-bottom: 32px;
+}
+
+.hero__text{
+    max-width: 445px;
+    width: 100%;
+    @include common-text(16px, 26px);
+    margin-bottom: 56px;
+    opacity: 0.8;
+}
+
+.hero__link{
+    @include button;
+}
+
+@media only screen and(max-width: 701px){
+
+.hero__info{
+    padding: 104px 58px;
+}
+
+    .hero__heading{
+        max-width: 329px;
+        width: 100%;
+        @include common-heading(48px, 48px);
+        margin-bottom: 24px;
+    }
+
+    .hero__text{
+        max-width: 398px;
+        width: 100%;
+        @include common-text(15px, 25px);
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and(max-width: 689px){
+    .hero .container .hero__inset{
+        background-image: url(/img/hero_template.png);
+        background-repeat: no-repeat;
+        background-size: 689px 500px;
+        background-position: center;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and(max-width: 483px){
+
+.hero__inset{
+    margin-bottom: 100px;
+}
+
+    .hero__info{
+        padding: 100px 24px;
+    }
+
+.hero__heading{
+    max-width: 279px;
+    width: 100%;
+    margin: 0 auto;
+    @include common-heading(40px, 40px);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.hero__text{
+    text-align: center;
+}
+
+.hero__link{
+    margin: 0 auto;
+}
+}
+
+@media only screen and(max-width: 361px){
+
+    .hero__inset{
+        margin-bottom: 70px;
+    }
+    .hero__heading{
+        @include common-heading(32px, 32px);
+        margin-bottom: 20px;
+    }
+
+    .hero__text{
+        @include common-text(14px, 24px);
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and(max-width: 327px){
+    .hero .container .hero__inset{
+        background-image: url(/img/hero_phone.png);
+        background-repeat: no-repeat;
+        background-size: 327px 500px;
+        background-position: center;
+    }
+}

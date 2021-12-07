@@ -1,0 +1,48 @@
+@mixin common-heading($fsize: 24px, $lheight: 32px, $color: #FEFCF7) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: $fsize;
+    line-height: $lheight;
+    color: $color;
+    font-family: "Fraunces", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  }
+  
+  @mixin common-text($fsize: 16px, $lheight: 26px, $color: #FEFCF7) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: $fsize;
+    line-height: $lheight;
+    color: $color;
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+  
+  @mixin button ($width: 217px, $color: #fff) {
+    width: $width;
+    color: $color;
+    background: $mainListColor;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-family: "Fraunces", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background-color: #66d2cf;
+  }
+  }
+  
+  @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  

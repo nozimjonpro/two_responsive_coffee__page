@@ -1,0 +1,181 @@
+.steps .container {
+  position: relative;
+  max-width: 1045px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.steps__heaidng {
+  @include common-heading($color: $linkColor);
+  margin-bottom: 80px;
+}
+
+.steps__list {
+  @include reset-list;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    top: 127px;
+    left: 35.5px;
+    display: block;
+    max-width: 730px;
+    width: 100%;
+    height: 1px;
+    background-color: $lineColor;
+    content: "";
+  }
+}
+
+.steps__item + .steps__item {
+  margin-left: 95px;
+}
+
+.steps__item {
+  max-width: 285px;
+
+  &::before{
+      position: absolute;
+      display: block;
+      width: 31px;
+      height: 31px;
+      background-color: $nearWhite;
+      border: 2px solid $mainListColor;
+      border-radius: 50%;
+      content: '';
+  }
+
+  &__heading {
+    max-width: 255px;
+    @include common-heading(32px, 36px, $headingColor);
+    margin-bottom: 42px;
+
+    &::before {
+      display: block;
+      @include common-heading(72px, 72px, $color: $lineColor);
+      margin-bottom: 38px;
+      margin-top: 82px;
+      content: "01";
+    }
+  }
+
+  &__text {
+    @include common-text($color: $headingColor);
+  }
+}
+
+@media only screen and (max-width: 1000px){
+.steps__list{
+    &::before{
+        width: 700px;
+    }
+}
+}
+
+@media only screen and(max-width: 950px){
+    .steps__list{
+        &::before{
+            width: 670px;
+        }
+}
+}
+
+@media only screen and(max-width: 907px){
+    .steps__list{
+        &::before{
+            width: 640px;
+            left: 20px;
+        }
+}
+}
+@media only screen and(max-width: 840px){
+    .steps__list{
+        &::before{
+            width: 610px;
+        }
+}
+}
+
+@media only screen and(max-width: 797px){
+
+    .steps__item__heading{
+        @include common-heading(28px, 32px, $color: $headingColor);
+        margin-bottom: 38px;
+    }
+
+    .steps__list{
+        &::before{
+            width: 580px;
+        }
+}
+}
+
+@media only screen and(max-width: 755px){
+    .steps__list{
+        &::before{
+            width: 550px;
+        }
+}
+}
+
+@media only screen and(max-width: 700px){
+    .steps__item__heading{
+        @include common-heading(24px, 32px, $color: $headingColor);
+        margin-bottom: 38px;
+    }
+
+    .steps__item__text{
+        @include common-text(15px, 25px, $color: $headingColor)
+    }
+}
+
+@media only screen and(max-width: 710px){
+    .steps__list{
+        &::before{
+            width: 520px;
+        }
+}
+}
+
+@media only screen and(max-width: 665px){
+
+.steps__heaidng{
+    margin-bottom: 40px;
+}
+
+    .steps__list{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+        flex-direction: column;
+        &::before{
+            display: none;
+        }
+    }
+
+    .steps__item + .steps__item{
+        margin-left: 0;
+        margin: 0 auto; 
+    }
+
+    .steps__item{
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        &::before{
+            display: none;
+        }
+
+        &__heading{
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            &::before{
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
