@@ -1,0 +1,163 @@
+.country .container {
+  margin-bottom: 168px;
+  padding: 0 85px;
+}
+
+.country__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.country__item + .country__item {
+  margin-left: 95px;
+}
+
+.country__item {
+  max-width: 285px;
+  width: 100%;
+  &::before {
+    display: block;
+    width: 41px;
+    height: 49px;
+    margin-bottom: 46px;
+    background-image: url(/img/uk.svg);
+    content: "";
+  }
+
+  &--canada::before {
+    display: block;
+    width: 52px;
+    height: 50px;
+    background-image: url(/img/canada.svg);
+    content: "";
+  }
+
+  &--australia::before {
+    display: block;
+    width: 49px;
+    height: 44px;
+    background-image: url(/img/australia.svg);
+    content: "";
+  }
+}
+
+.country__info {
+  margin: 0;
+}
+
+.country__heading {
+  @include common-heading($color: $linkColor);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.country__name {
+  @include common-heading(32px, 36px, $color: $headingColor);
+  margin-bottom: 24px;
+}
+
+.country__definition + .country__definition {
+  margin-top: 8px;
+}
+
+.country__definition {
+  @include common-text($color: $headingColor);
+  margin: 0;
+}
+
+@media only screen and(max-width: 1172px) {
+  .country__name {
+    @include common-heading(28px, 36px, $headingColor);
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and(max-width: 1070px) {
+  .country__item + .country__item {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and(max-width: 980px) {
+
+  .country .container{
+    margin-bottom: 100px
+  }
+
+  .country__name {
+    @include common-heading($color: $headingColor);
+    margin-bottom: 20px;
+  }
+
+  .country__item + .country__item {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and(max-width: 800px) {
+
+  .country .container{
+    margin-bottom: 100px
+  }
+
+  .country__name {
+    @include common-heading(20px, 32px, $headingColor);
+  }
+
+  .country__definition {
+    @include common-text(14px, 24px, $headingColor);
+  }
+}
+
+@media only screen and(max-width: 700px) {
+
+.country .container{
+  margin-bottom: 100px
+}
+
+  .country__name {
+    @include common-heading(18px, 30px, $headingColor);
+    margin-bottom: 15px;
+  }
+
+  .country__definition {
+    @include common-text(12px, 22px, $headingColor);
+  }
+}
+
+@media only screen and(max-width: 650px) {
+  .country .container {
+    padding: 0 25px;
+    margin-bottom: 80px;
+  }
+
+  .country__list {
+    flex-direction: column;
+  }
+
+  .country__item + .country__item {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .country__item {
+    &::before {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .country__name {
+      @include common-heading(28px, 36px, $headingColor);
+      margin-bottom: 15px;
+    }
+
+    .country__definition {
+      @include common-text(16px, 26px, $headingColor);
+    }
+  }
+
+  .country__info {
+    text-align: center;
+  }
+}

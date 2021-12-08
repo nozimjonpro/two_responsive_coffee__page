@@ -1,0 +1,106 @@
+.create--intro .container{
+    margin-bottom: 168px;
+}
+
+.intro__inset--intro{
+    padding: 137px 85px;
+    background-image: url(/img/create_hero.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 450px;
+    background-position: center
+}
+
+.create--intro .intro__heading{
+    @include common-heading(72px, 72px);
+    margin-bottom: 32px;
+}
+
+.create--intro .intro__text{
+    max-width: 445px;
+    width: 100%;
+    @include common-text();
+    opacity: 0.8;
+
+}
+
+@media only screen and(max-width: 695px){
+    .create--intro .intro__heading{
+        @include common-heading(66px, 72px);
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and(max-width: 689px){
+    .intro__inset--intro{
+        padding: 126px 58px;
+        background-image: url(/img/create-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 689px 400px;
+        background-position: center
+    }
+
+    .create--intro .intro__heading{
+        @include common-heading(48px, 48px);
+        margin-bottom: 32px;
+    }
+
+    .create--intro .intro__text{
+        max-width: 398px;
+        width: 100%;
+        @include common-text(15px, 25px);
+        opacity: 0.8;
+    
+    }
+}
+
+
+@media only screen and(max-width: 478px){
+
+    .intro__inset--intro{
+        padding: 100px 30px;
+    }
+
+    .create--intro .intro__heading{
+        @include common-heading(40px, 40px);
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .create--intro .intro__text{
+        max-width: 398px;
+        width: 100%;
+        @include common-text(15px, 25px);
+        opacity: 0.8;
+        text-align: center;
+    
+    }
+}
+
+@media only screen and(max-width: 370px){
+    .create--intro .intro__heading{
+        @include common-heading(32px, 32px);
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .create--intro .intro__text{
+        max-width: 398px;
+        width: 100%;
+        @include common-text(14px, 24px);
+        opacity: 0.8;
+        text-align: center;
+    
+    }
+}
+
+@media only screen and(max-width: 327px){
+    .intro__inset--intro{
+        padding: 80px 30px;
+        background-image: url(/img/create-phone.png);
+        background-repeat: no-repeat;
+        background-size: 327px 400px;
+        background-position: center
+    }
+}
+
+

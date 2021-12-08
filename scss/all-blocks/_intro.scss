@@ -23,6 +23,10 @@ background-position: center
 }
 
 @media only screen and(max-width: 689px){
+
+    .intro .container{
+        margin-bottom: 100px;
+    }
     .intro__inset{
         padding: 58px 118px;
         background-image: url(/img/Bitmap__template.png);
@@ -45,6 +49,11 @@ background-position: center
 }
 
 @media only screen and(max-width: 515px){
+
+    .intro .container{
+        margin-bottom: 90px;
+    }
+
 .intro__inset{
     padding: 100px 40px;
 }
