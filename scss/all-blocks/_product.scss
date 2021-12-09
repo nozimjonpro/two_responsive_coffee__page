@@ -47,6 +47,25 @@
     background-size: 255px 193px;
     content: "";
   }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    &::before {
+      display: block;
+      width: 255px;
+      height: 193px;
+      margin-bottom: 71px;
+      background-image: url(/img/product.png);
+      background-repeat: no-repeat;
+      background-size: 255px 193px;
+      content: "";
+    }
+  }
 }
 
 .product__item__heading {

@@ -12,6 +12,24 @@ border-radius: 10px;
 
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .intro__inset{
+        padding: 137px 85px;
+    background-image: url(/img/Bitmap@2x.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 450px;
+    background-position: center;
+    border-radius: 10px;
+    
+    }
+} 
+
 .intro__heading{
     @include common-heading(40px, 48px);
     margin-bottom: 24px;
@@ -38,6 +56,23 @@ border-radius: 10px;
         border-radius: 10px;
     }
 
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        .intro__inset{
+            padding: 58px 118px;
+            background-image: url(/img/Bitmap__template.png);
+            background-repeat: no-repeat;
+            background-size: 689px 400px;
+            background-position: inherit;
+            border-radius: 10px;
+        }
+    } 
+
     .intro__heading{
         max-width: 398px;
         width: 100%;
@@ -58,20 +93,35 @@ border-radius: 10px;
     }
 
 .intro__inset{
-    padding: 100px 40px;
+    padding: 100px 60px;
 }
 }
 
 @media only screen and(max-width: 425px){
     .intro__inset{
-        padding: 87px 24px;
         padding-top: 111px;
         background-image: url(/img/Bitmap_phone.png);
         background-repeat: no-repeat;
         background-size: 327px 400px;
         background-position: center;
         border-radius: 10px;
-    }  
+    }      
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        .intro__inset{
+            padding-top: 111px;
+            background-image: url(/img/Bitmap_phone@2x.png);
+            background-repeat: no-repeat;
+            background-size: 327px 400px;
+            background-position: center;
+            border-radius: 10px;
+        } 
+    } 
 }
 
 @media only screen and(max-width: 327px){
@@ -83,6 +133,23 @@ border-radius: 10px;
         background-size: 327px 400px;
         background-position: center;
         border-radius: 10px
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        .intro__inset{
+            padding-top: 111px;
+            background-image: url(/img/Bitmap_phone@2x.png);
+            background-repeat: no-repeat;
+            background-size: 327px 400px;
+            background-position: center;
+            border-radius: 10px;
+        } 
     }
 
     .intro__heading{

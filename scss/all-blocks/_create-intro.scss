@@ -41,6 +41,25 @@
         border-radius: 10px;
     }
 
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .intro__inset--intro{
+        padding: 126px 58px;
+        background-image: url(/img/create-tablet@2x.png);
+        background-repeat: no-repeat;
+        background-size: 689px 400px;
+        background-position: center;
+        border-radius: 10px;
+    } 
+    
+  /* Retina-specific stuff here */
+} 
+
     .create--intro .intro__heading{
         @include common-heading(48px, 48px);
         margin-bottom: 32px;
@@ -80,12 +99,45 @@
 
 @media only screen and(max-width: 425px){
     .intro__inset--intro{
-        padding: 80px 30px;
+        
+        padding: 126px 58px;
         background-image: url(/img/create-phone.png);
         background-repeat: no-repeat;
         background-size: 327px 400px;
         background-position: center;
         border-radius: 10px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        .intro__inset--intro{
+        
+            padding: 126px 58px;
+            background-image: url(/img/create-phone-1.png);
+            background-repeat: no-repeat;
+            background-size: 327px 400px;
+            background-position: center;
+            border-radius: 10px;
+        }    
+
+    .create--intro .intro__heading{
+        @include common-heading(32px, 32px);
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .create--intro .intro__text{
+        max-width: 398px;
+        width: 100%;
+        @include common-text(14px, 24px);
+        opacity: 0.8;
+        text-align: center;
+    
     }
 }
 
@@ -118,3 +170,20 @@
 }
 
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .intro__inset--intro{
+       background-image: url(/img/create_hero@2x.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 450px;
+    background-position: center;
+    border-radius: 10px;
+    } 
+    
+  /* Retina-specific stuff here */
+}}

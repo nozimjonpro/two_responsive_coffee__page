@@ -7,6 +7,23 @@
     border-radius: 10px;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero .container .hero__inset{
+        margin-bottom: 136px;
+        background-image: url(/img/coffee_hero@2x.png);
+        background-repeat: no-repeat;
+        background-size: 1280px 600px;
+        background-position: center;
+        border-radius: 10px;
+    }/
+} 
+
 .hero__info{
     padding: 117px 85px;
 }
@@ -60,6 +77,23 @@
         margin-bottom: 100px;
         border-radius: 10px;
     }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        .hero .container .hero__inset{
+            background-image: url(/img/hero_template@2x.png);
+            background-repeat: no-repeat;
+            background-size: 689px 500px;
+            background-position: center;
+            margin-bottom: 100px;
+            border-radius: 10px;
+        }
+    } 
 }
 
 @media only screen and(max-width: 483px){
@@ -98,6 +132,22 @@
         background-position: center;
         border-radius: 10px;
     }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        .hero .container .hero__inset{
+            background-image: url(/img/hero_phone.png);
+            background-repeat: no-repeat;
+            background-size: 327px 500px;
+            background-position: center;
+            border-radius: 10px;
+        }
+    } 
 }
 
 @media only screen and(max-width: 361px){
