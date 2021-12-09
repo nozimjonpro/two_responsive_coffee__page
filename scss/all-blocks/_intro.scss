@@ -59,6 +59,17 @@ background-position: center
 }
 }
 
+@media only screen and(max-width: 425px){
+    .intro__inset{
+        padding: 87px 24px;
+        padding-top: 111px;
+        background-image: url(/img/Bitmap_phone.png);
+        background-repeat: no-repeat;
+        background-size: 327px 400px;
+        background-position: center;
+    }  
+}
+
 @media only screen and(max-width: 327px){
     .intro__inset{
         padding: 87px 24px;
