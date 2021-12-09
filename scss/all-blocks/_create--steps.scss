@@ -1,0 +1,93 @@
+.create--steps .container{
+    margin-bottom: 168px;
+}
+
+.create--steps__inset{
+    position: relative;
+    padding: 100px 85px;
+    padding-right: 150px;
+    background-color: $headingColor;
+    border-radius: 10px;
+}
+
+
+.create--steps .steps__item__heading{
+    color: $nearWhite;
+}
+
+.create--steps .steps__item__text{
+    color: $nearWhite;
+}
+
+.create--steps .steps__list{
+    &::before{
+        max-width: 760px;
+        top: 115.5px;
+    left: 100.5px;
+    }
+}
+
+.create--steps .steps__item{
+    &::before{
+        background-color: transparent;
+    }
+}
+
+@media only screen and(max-width: 768px){
+
+    .create--steps__inset{
+        padding: 100px 40px;
+    }
+
+    .create--steps .steps__list{
+        &::before{
+            max-width: 455px;
+            width: 100%;
+            top: 115.5px;
+        left: 55.5px;
+        }
+    
+    }
+
+    .create--steps .steps__item + .steps__item{
+        margin-left: 10px;
+    }
+
+    .create--steps .steps__item__heading{
+        margin-bottom: 35px;
+    }
+
+    .create--steps .steps__item__heading::before{
+        margin-bottom: 38px;
+    }
+}
+
+@media only screen and(max-width: 640px){
+
+   
+
+   .create--steps .steps__item + .steps__item{
+        margin-left: 0;
+    } 
+
+    .create--steps .steps__item{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width: 425px){
+
+    .create--steps__inset{
+        padding: 80px 30px;
+    }
+
+    .create--steps .steps__item + .steps__item{
+        margin-top: 40px;
+     margin-left: 0;
+}
+
+
+.create--steps .steps__item__heading::before{
+    margin-top: 0;
+}
+}

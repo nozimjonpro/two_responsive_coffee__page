@@ -57,6 +57,22 @@
       margin-top: 82px;
       content: "01";
     }
+
+    &--second::before {
+        display: block;
+        @include common-heading(72px, 72px, $color: $lineColor);
+        margin-bottom: 38px;
+        margin-top: 82px;
+        content: "02";
+      }
+
+      &--third::before {
+        display: block;
+        @include common-heading(72px, 72px, $color: $lineColor);
+        margin-bottom: 38px;
+        margin-top: 82px;
+        content: "03";
+      }
   }
 
   &__text {
