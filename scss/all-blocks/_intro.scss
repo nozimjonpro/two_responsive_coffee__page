@@ -7,7 +7,9 @@
 background-image: url(/img/Bitmap.png);
 background-repeat: no-repeat;
 background-size: 1280px 450px;
-background-position: center
+background-position: center;
+border-radius: 10px;
+
 }
 
 .intro__heading{
@@ -32,7 +34,8 @@ background-position: center
         background-image: url(/img/Bitmap__template.png);
         background-repeat: no-repeat;
         background-size: 689px 400px;
-        background-position: center;
+        background-position: inherit;
+        border-radius: 10px;
     }
 
     .intro__heading{
@@ -67,6 +70,7 @@ background-position: center
         background-repeat: no-repeat;
         background-size: 327px 400px;
         background-position: center;
+        border-radius: 10px;
     }  
 }
 
@@ -78,6 +82,7 @@ background-position: center
         background-repeat: no-repeat;
         background-size: 327px 400px;
         background-position: center;
+        border-radius: 10px
     }
 
     .intro__heading{
