@@ -161,7 +161,7 @@
 
     .choice__item{
         
-        padding: 40px;
+        // padding: 40px;
         &::before{
             margin-left: 0;
             margin-right: 55px;
@@ -172,9 +172,7 @@
         margin-bottom: 16px;
     }
 
-    .choice__info__text{
-        max-width: 300px;
-    }
+  
 }
 
 @media only screen and(max-width: 660px){
@@ -198,9 +196,15 @@
       flex-direction: column;
 
       &::before{
+        min-width: 72px;
+        max-width: 72px;
+        min-height: 72px;
+        max-height: 72px;
         margin: 0;
         margin-bottom: 24px;
       }
+
+     
     }
 
     .choice__info__heading{

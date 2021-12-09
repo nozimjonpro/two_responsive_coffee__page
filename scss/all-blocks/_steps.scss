@@ -155,8 +155,13 @@
 
 @media only screen and(max-width: 665px){
 
+    .steps .container{
+        margin-bottom: 100px;
+    }
+
 .steps__heaidng{
     margin-bottom: 40px;
+    text-align: center ;
 }
 
     .steps__list{
